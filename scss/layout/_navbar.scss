@@ -1,0 +1,20 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/mediaquery";
+
+nav {
+  background-color: variables.$color-fondo;
+  background-image: url("/img/fondo.jpg");
+
+  @include mediaquery.tablet {
+    font-size: 1.9rem;
+  }
+
+  @include mediaquery.mobile {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 0.1rem;
+    margin: 0rem;
+  }
+}

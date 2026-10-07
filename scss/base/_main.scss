@@ -1,0 +1,31 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/mediaquery";
+
+main {
+  ul {
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  }
+
+  .contenedor-goku {
+    @include mixins.generar-flex;
+    justify-content: center;
+  }
+
+  .contenedor-gon {
+    @include mixins.generar-flex;
+    justify-content: center;
+  }
+
+  .seccion-contacto {
+    display: flex;
+    justify-content: center;
+  }
+}

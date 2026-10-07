@@ -1,0 +1,40 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/mediaquery";
+
+.card-primera {
+  @include mixins.tarjeta-simple(blue, white, 5px);
+  background: linear-gradient(to left, blue, black);
+  padding: 40px;
+
+  @include mediaquery.tablet {
+    font-size: 1.9rem;
+  }
+
+  @include mediaquery.mobile {
+    font-size: 1rem;
+  }
+}
+
+.card-segunda {
+  @include mixins.tarjeta-simple(#0e8517, #ffffff, 5px);
+  background: linear-gradient(to left, #0e8517, black);
+  font-size: xx-large;
+}
+.card-tercera {
+  @include mixins.tarjeta-simple(#85480e, #ffffff, 5px);
+  font-size: variables.$letra-m;
+
+  ul li {
+    @include mixins.generar-flex;
+    justify-content: center;
+
+    @include mediaquery.tablet {
+      font-size: 1.9rem;
+    }
+
+    @include mediaquery.mobile {
+      font-size: 0.8rem;
+    }
+  }
+}

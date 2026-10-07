@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boton-arriba, .boton-comprar {
+  display: inline-block;
+  pad: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
+
+.contacto-email, .contacto-wssp {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+body {
+  background-color: #0a6177;
+  background-image: url("/img/fondo.jpg");
+}
+@media (max-width: 900px) {
+  body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.hero-section figure img:hover {
+  transform: scale(1.05);
+}
+
+main ul {
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main p {
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+main .contenedor-goku {
+  display: flex;
+  justify-content: center;
+}
+main .contenedor-gon {
+  display: flex;
+  justify-content: center;
+}
+main .seccion-contacto {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+nav {
+  background-color: rgba(24, 95, 175, 0.8470588235);
+  background-image: url("/img/fondo.jpg");
+}
+@media (max-width: 900px) {
+  nav {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    padding: 0.1rem;
+    margin: 0rem;
+  }
+}
+
+header {
+  background-color: #012830;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #cedde0;
+  color: #181717;
+  background-image: url("/img/fondo.jpg");
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+footer li {
+  display: block;
+  padding: 1rem;
+  font-size: 3rem;
+}
+footer p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+}
+footer .pie-de-pagina {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contenedor-bancos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #181717;
+  padding: 20px 20px;
+}
+@media (max-width: 900px) {
+  .contenedor-bancos {
+    padding: 0.2rem;
+    margin: 0rem;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-bancos {
+    padding: 0.2rem;
+    flex-wrap: wrap;
+  }
+}
+
+.boton-arriba {
+  background-color: #0e7f9b;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.boton-comprar {
+  background-color: #0e8517;
+  color: #ffffff;
+  font-size: 25px;
+  margin-top: 100px;
+}
+
+.card-primera {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  background: linear-gradient(to left, blue, black);
+  padding: 40px;
+}
+@media (max-width: 900px) {
+  .card-primera {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .card-primera {
+    font-size: 1rem;
+  }
+}
+
+.card-segunda {
+  background-color: #0e8517;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  background: linear-gradient(to left, #0e8517, black);
+  font-size: xx-large;
+}
+
+.card-tercera {
+  background-color: #85480e;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 1rem;
+}
+.card-tercera ul li {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .card-tercera ul li {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .card-tercera ul li {
+    font-size: 0.8rem;
+  }
+}
+
+.contenedor-general-formulario {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-general-formulario .form-container {
+  background: #ffffff;
+  padding: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.0509803922);
+}
+.contenedor-general-formulario .form-container h2 {
+  color: #333333;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+.contenedor-general-formulario .form-container p {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.contenedor-general-formulario .input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-general-formulario .input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 6px;
+}
+.contenedor-general-formulario .input-group input,
+.contenedor-general-formulario .input-group select,
+.contenedor-general-formulario .input-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.contenedor-general-formulario .input-group input:focus,
+.contenedor-general-formulario .input-group select:focus,
+.contenedor-general-formulario .input-group textarea:focus {
+  border-color: #007bff;
+}
+.contenedor-general-formulario .btn-submit {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+.contenedor-general-formulario .btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/*# sourceMappingURL=main.css.map */

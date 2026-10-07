@@ -1,0 +1,24 @@
+$color-fondo: #185fafd8;
+$color-letra: #cedde0;
+
+$letra-xl: 3rem;
+$letra-l: 2rem;
+$letra-m: 1rem;
+$letra-s: 0.5rem;
+$letra-xs: 0.2rem;
+
+$color-fondo-body: #0a6177;
+
+%boton-base {
+  display: inline-block;
+  pad: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
+
+%formato-contacto {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}

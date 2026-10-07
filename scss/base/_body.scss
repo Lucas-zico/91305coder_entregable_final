@@ -1,0 +1,30 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/mediaquery";
+
+body {
+  background-color: variables.$color-fondo-body;
+  background-image: url("/img/fondo.jpg");
+
+  @include mediaquery.tablet {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mediaquery.mobile {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hero-section {
+  @include mixins.generar-flex;
+  @include mixins.formato-flex;
+  flex-wrap: wrap;
+
+  figure img:hover {
+    transform: scale(1.05);
+  }
+}
