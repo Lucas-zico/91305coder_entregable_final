@@ -1,0 +1,19 @@
+@use "../utilities/variables";
+
+.boton-arriba {
+  @extend %boton-base;
+  display: flex;
+  justify-content: center;
+  background-color: #0e7f9b;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.boton-comprar {
+  @extend %boton-base;
+  display: flex;
+  justify-content: center;
+  background-color: #0e8517;
+  color: #ffffff;
+  font-size: 25px;
+}

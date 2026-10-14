@@ -1,0 +1,54 @@
+@use "../utilities/variables";
+@use "../utilities/mixins";
+@use "../utilities/mediaquery";
+
+footer {
+  background-color: #cedde0;
+  color: #181717;
+  background-image: url("/img/fondo.jpg");
+
+  ul {
+    list-style: none;
+    @include mixins.generar-flex;
+    justify-content: center;
+  }
+
+  li {
+    display: block;
+    padding: 1rem;
+    font-size: 3rem;
+  }
+
+  p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 18px;
+  }
+  .pie-de-pagina {
+    @include mixins.generar-flex;
+    @include mixins.formato-flex;
+  }
+}
+
+.contenedor-bancos {
+  @include mixins.generar-flex;
+  @include mixins.formato-flex;
+  background-color: #181717;
+  padding: 20px 20px;
+
+  @include mediaquery.tablet {
+    padding: 0.2rem;
+    margin: 0rem;
+  }
+
+  @include mediaquery.mobile {
+    padding: 0.2rem;
+    flex-wrap: wrap;
+  }
+}
+
+.contacto-email {
+  @extend %formato-contacto;
+}
+.contacto-wssp {
+  @extend %formato-contacto;
+}
